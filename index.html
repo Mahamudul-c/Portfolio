@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="background">
+		
+	<div class="nav">
+		<a class="a active" href="#">Home</a>
+		<a class="b" href="#">About Me</a>
+		<a class="c" href="#">Gallery</a>
+		<a class="d" href="#">Contact Me</a>
+		
+		
+
+	</div>
+
+	<div class="content">
+		
+		 <div class="home">
+		 	<h1>Mahamudul</h1>
+		 	<h3>Web Designer</h3>
+		 </div>
+
+
+		<div class="aboutus">
+			<p><b>Hello Visitor,<br>
+			<b>Welcome to my Personal Portfolio and my personal website.<b><br>
+				<h1>About Me:</h1><hr>
+<h2><p>University Name: University Of Asia Pacific</p></h2>
+<p><b>Department:Computer Science & Engineering<b></p>
+<p><b>Registration Id:17101062<b></p>
+<p><b>Section:B<b></p>
+<p><b>Contact Info:01732055517</p>
+<p><b>Blood Group:B+</p>
+<p><b>Email-Information: mahamudulhasan6478@gmail.com</p>
+<p><b>Father Name:Md.Mamunur Rashid<b></p>
+<p><b>Mother Name:Mst.Shahanaz Aktar<b></p>
+<p><b>Present Address:67/F,Green-Road,Panthapath,Dhaka<b></p>
+<hr width="800px">
+<h1>Project:</h1>
+<hr>
+<p><b>Database Management:Hostel Management System<b></p>
+	<p><b>Portfolio:Personal<b></p>
+		<p><b>Calculator:Make with Java<b></p>
+			<p><b>Simple Game:Language C and C++<b></p>
+				
+<hr width="800px">
+<h1>Completed Course(Important):</h1><hr>
+<p><b>Programming Language: C<b></p>
+<p><b>Java<b></p>
+	<p><b>Python<b></p>
+		<p><b>Database<b></p>
+			<p><b>System Analysis<b></p>
+				<p><b>Data Structure<b></p>
+					<p><b>Algorithm<b></p>
+						<p><b>Digital Logic System & Design<b></p>
+<hr width="800px">
+<h1>Social activities</h1><hr>
+<p><b>Member:Blood Donation Group<b></p>
+	<p><b>Executive Member:Rajabari Student Forum<b></p>
+		<p><b>Senior Executive Member:New Govt. Students Activity</p>
+			<p><b>Member:Mollapara Jubo Songho</p>
+				<p><b><b>Captain:Mollapara Juniors Cricket Team</p>
+<hr width="800px">
+
+<h1>Achievements and Awards</h1><hr>
+<p><b>SchoolarShip:Junior school certificate<b></p>
+	<p><b>SSC:5.00<b></p>
+		<p><b>HSC:5.00<b></p>
+
+<h1>Interests and Hobbies</h1><hr>
+<P><b>Web design & Development<b></P>
+	<p><b>3D Animation<b></p>
+		<p>Game Development</p>
+<hr width="800px">
+
+<h1>Drem Job:</h1><hr>
+<p>Google Developer</p>
+
+<h1>Professional Goal:</h1><hr>
+<p>Senior Software Developer</p>
+<p>Web Designer & Developer</p>
+
+			</div>
+
+	<div class="gallery">
+		<div class="image">
+			<img src="image/gallary4.jpg"/>
+		</div>
+		<div class="image">
+			<img src="image/gallary2.jpg"/>
+		</div>
+		<div class="image">
+			<img src="image/cover.jpg"/>
+		</div>
+		<div class="image">
+			<img src="image/gallary3.jpg"/>
+		</div>
+		<div class="image">
+			<img src="image/gallary51opy.jpg"/>
+		</div>
+		<div class="image">
+			<img src="image/last.jpg"/>
+		</div>
+		<div class="image">
+			<img src="image/last1.jpg"/>
+		</div>
+		<div class="image">
+			<img src="image/last2.jpg"/>
+		</div>
+
+	</div>
+
+	<div class="contactus">
+		<div class="contactfrom">
+			<form action="index.html" method="post">
+				<input type="text" name="" class="inputtext"value="First name">
+				<input type="text" name="" class="inputtext"value="Last name">
+				<input type="text" name="" class="inputtext"value="your Email">
+				<textarea cols="4" rows="6" class="inputmessage">Your Messages...!!!</textarea>
+				<input type="button" name="" class="submitbutton"value="submit">
+
+			</form>
+		</div>
+	</div>
+
+	</div>
+
+	</div>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		$('a').click(function(){
+
+			var selected = $(this);
+			$('a').removeClass('.active');
+			$(selected).addClass('active');
+
+		});
+
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutus = $('.aboutus'),
+		$gallery = $('.gallery'),
+		$contactus = $('.contactus');
+
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutus.fadeOut();
+			$gallery.fadeOut();
+			$contactus.fadeOut();
+		});
+
+		$b.click(function(){
+			$aboutus.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeOut();
+			$contactus.fadeOut();
+
+		});
+
+		$c.click(function(){
+			$gallery.fadeIn();
+			$home.fadeOut();
+			$aboutus.fadeOut();
+			$contactus.fadeOut();
+
+		});
+		$d.click(function(){
+			$contactus.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeOut();
+			$aboutus.fadeOut();
+
+		});
+
+
+	});
+
+</script>
+
+
+
+
+</body>
+</html>
